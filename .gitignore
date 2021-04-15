@@ -38,3 +38,4 @@ tramp
 godot/export_presets.cfg
 *.dll
 *.so
+*.dylib

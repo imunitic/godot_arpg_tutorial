@@ -2,7 +2,7 @@ use gdnative::api::*;
 use gdnative::prelude::*;
 
 #[derive(NativeClass)]
-#[inherit(Node)]
+#[inherit(Node2D)]
 #[register_with(Self::register_builder)]
 pub struct Game {
     name: String,
@@ -14,7 +14,7 @@ impl Game {
         godot_print!("Game builder is registered!");
     }
 
-    fn new(_owner: &Node) -> Self {
+    fn new(_owner: &Node2D) -> Self {
         godot_print!("Game is created!");
         Game {
             name: "".to_string(),
@@ -22,12 +22,12 @@ impl Game {
     }
 
     #[export]
-    unsafe fn _ready(&mut self, _owner: &Node) {
+    unsafe fn _ready(&mut self, _owner: &Node2D) {
         self.name = "Game".to_string();
         godot_print!("{} is ready!", self.name);
     }
 
     #[export]
-    unsafe fn _process(&self, _owner: &Node, _delta: f64) {
+    unsafe fn _process(&self, _owner: &Node2D, _delta: f64) {
     }
 }
