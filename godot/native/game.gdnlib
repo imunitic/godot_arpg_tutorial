@@ -1,0 +1,38 @@
+[general]
+
+singleton=false
+load_once=true
+symbol_prefix="godot_"
+reloadable=true
+
+[entry]
+
+Android.arm64-v8a="res://../lib/aarch64-linux-android/libcard_game.so"
+Android.armeabi-v7a="res://../lib/armv7-linux-androideabi/libcard_game.so"
+Android.x86="res://../lib/i686-linux-android/libcard_game.so"
+Android.x86_64="res://../lib/x86_64-linux-android/libcard_game.so"
+iOS.arm64="res://../lib/aarch64-apple-ios/libcard_game.a"
+OSX.64="res://../lib/x86_64-apple-darwin/libcard_game.dylib"
+Server.32="res://../lib/i686-unknown-linux-gnu/libcard_game.so"
+Server.64="res://../lib/x86_64-unknown-linux-gnu/libcard_game.so"
+# Windows.32="res://../lib/i686-pc-windows-gnu/card_game.dll"
+Windows.32="res://../lib/i686-pc-windows-msvc/card_game.dll"
+# Windows.64="res://../lib/x86_64-pc-windows-gnu/card_game.dll"
+Windows.64="res://../lib/x86_64-pc-windows-msvc/card_game.dll"
+X11.32="res://../lib/i686-unknown-linux-gnu/libcard_game.so"
+X11.64="res://../lib/x86_64-unknown-linux-gnu/libcard_game.so"
+
+[dependencies]
+
+Android.arm64-v8a=[  ]
+Android.armeabi-v7a=[  ]
+Android.x86=[  ]
+Android.x86_64=[  ]
+iOS.arm64=[  ]
+OSX.64=[  ]
+Server.32=[  ]
+Server.64=[  ]
+Windows.32=[  ]
+Windows.64=[  ]
+X11.32=[  ]
+X11.64=[  ]
